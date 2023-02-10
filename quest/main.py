@@ -8,5 +8,3 @@ while run:
         if event.type == pygame.QUIT:
             pygame.quit()
     pygame.display.update()
-print('hello')
-print('hello')
