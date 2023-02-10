@@ -9,3 +9,4 @@ while run:
             pygame.quit()
     pygame.display.update()
 print('hello')
+print('hello')
