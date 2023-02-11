@@ -1,33 +1,29 @@
-import random
-import time
-
 import pygame
 
-WIDTH = 512
-HEIGHT = 512
-FPS = 165
-
-def random_color():
-    return random.randint(0, 255)
-
 pygame.init()
-pygame.mixer.init()
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('Glitch-in-the-Head')
+W = 512
+H = 512
+screen = pygame.display.set_mode((512, 512))
+img = pygame.image.load('img/street.jpg')
+pygame.display.set_icon(img)
+pygame.display.set_caption('Glitc-in-the-Head')  # GITH
 run = True
-clock = pygame.time.Clock()
-BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
+square = pygame.Surface((50, 50))
+square.fill('Blue')
+screen.blit(square, (W / 2-25, H / 2-25))
+pygame.display.update()
+
+
 while run:
-    random_color = (random.randint(0, 255),random.randint(0, 255),random.randint(0, 255))
-    screen.fill(random_color)
-    clock.tick(FPS)
-    print(clock.get_fps())
+
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-    pygame.display.update()
-    pygame.display.flip()
+        up = 0
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_UP:
+                print('da')
+                up += 1
+                screen.blit(square, (W / 2-25, up))
+                pygame.display.update()
