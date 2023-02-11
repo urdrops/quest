@@ -17,6 +17,7 @@ square = pygame.Surface((50, 50))
 while run:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            pygame.quit()
+            run = False
     pygame.draw.circle(screen,"RED",(W/2, H/2),100)
     pygame.display.update()
+pygame.quit()
