@@ -13,11 +13,16 @@ square = pygame.Surface((50, 50))
 # screen.blit(square, (W / 2-25, H / 2-25))
 # pygame.display.update()
 
+text_fonts = pygame.font.Font("fonts/Roboto-Bold.ttf",40)
+text_surface = text_fonts.render("Hello, World",True,'Green')
+
 
 while run:
+    screen.blit(img,(0,0))
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
-    pygame.draw.circle(screen,"RED",(W/2, H/2),100)
+
     pygame.display.update()
 pygame.quit()

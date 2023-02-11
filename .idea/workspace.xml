@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eef535f2-77b8-4d6b-9795-38c60091b467" name="Changes" comment="git init">
+      <change afterPath="$PROJECT_DIR$/quest/fonts/Roboto-Bold.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quest/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/quest/main.py" afterDir="false" />
     </list>
@@ -35,6 +36,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/jahon/Documents/GitHub/quest&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jahon\Documents\GitHub\quest\quest\fonts" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676106972503</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="git init">
+      <created>1676108253653</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676108253654</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
