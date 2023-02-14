@@ -78,8 +78,7 @@ animations = player_stay[animation_count]
 while running:
     # кнопки
     keys = pygame.key.get_pressed()
-    
-    # спрайт игрока
+        # спрайт игрока
     class Player(pygame.sprite.Sprite):
         def __init__(self):
             pygame.sprite.Sprite.__init__(self)
@@ -100,15 +99,6 @@ while running:
             self.rect.center = (WIDTH / 100 * count, HEIGHT / 100 * 10)
     sky = Sky()
     all_sprites.add(sky)
-    class Sky2(pygame.sprite.Sprite):
-        def __init__(self):
-            pygame.sprite.Sprite.__init__(self)
-            self.image = pygame.image.load('C:/Users/NOTEBOOK/Desktop/quest/quest/images/317130244148211.png')
-            self.image = pygame.transform.scale(self.image, (220/100 * 100, 155/100 * 100))
-            self.rect = self.image.get_rect()
-            self.rect.center = (WIDTH / 100 * count2, HEIGHT / 100 * 10)
-    sky2 = Sky2()
-    all_sprites.add(sky2)
     # Держим цикл на правильной скорости
     clock.tick(FPS)
 
@@ -128,7 +118,6 @@ while running:
     #screen.blit(back_ground.image, back_ground.rect)  
     screen.blit(player.image, player.rect)
     screen.blit(sky.image, sky.rect)
-    screen.blit(sky2.image, sky2.rect)
     pygame.display.update()
 
     if keys[pygame.K_RIGHT]:
