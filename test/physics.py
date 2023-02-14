@@ -50,17 +50,6 @@ while True:
             if i.button == 1:
                 
                 create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
-                create_square(space, i.pos)
                 print(i.pos)
 
     space.step(1 / FPS)
